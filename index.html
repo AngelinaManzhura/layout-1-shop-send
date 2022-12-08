@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="logo">
+              <a href="">
+                <img src="images/logo.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col-6">
+            <nav>
+              <ul class="menu">
+                <li class="menu-item"><a href="">Home</a></li>
+                <li class="menu-item active">
+                  <a class="listitem-products" href="">Products</a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="">Lorem ipsum dolor</a>
+                    </li>
+                    <li><a href="">Sit amet</a></li>
+                    <li><a href="">Consectetur adipisicing</a></li>
+                    <li><a href="">Tempor incididunt</a></li>
+                    <li><a href="">Dolore magne aliqua</a></li>
+                    <li><a href="">Ut enim ad minim veriam</a></li>
+                    <li><a href="">Quis nostrud</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="">Shipping</a></li>
+                <li class="menu-item"><a href="">Payment</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-3">
+            <div class="search-basket">
+              <form class="search" action="">
+                <input class="text-search" type="text" placeholder="search" />
+                <button class="search-button" type="submit">
+                  <img src="images/seach.png" alt="" />
+                </button>
+              </form>
+              <button class="basket" type="submit">
+                <img src="images/basket.png" alt="" />
+                <span class="basket-badge">4</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="carousel">
+      <div class="carousel-container">
+        <img src="images/left-arrow.png" alt="" width="26px" height="49px" />
+        <h1 class="carousel-title">Slide №3</h1>
+        <img src="images/right-arrow.png" alt="" width="26px" height="49px" />
+      </div>
+    </section>
+
+    <main>
+      <div class="container main">
+        <section class="aside">
+          <div class="aside-list">
+            <ul>
+              <h3 class="aside-title">DEVICE TYPE</h3>
+              <li>
+                <input type="checkbox" name="device" id="laptop" />
+                <label for="laptop"
+                  ><p class="aside-list-text">Laptop</p></label
+                >
+              </li>
+              <li class="aside-padding">
+                <input type="checkbox" name="device" id="tablet" />
+                <label for="tablet">
+                  <p class="aside-list-text">Tablet</p></label
+                >
+              </li>
+            </ul>
+            <ul>
+              <h3 class="aside-title">COLOR</h3>
+              <li>
+                <input type="checkbox" name="color" id="black" />
+                <label for="black"> <p class="aside-list-text">Black</p></label>
+              </li>
+              <li>
+                <input type="checkbox" name="color" id="red" />
+                <label for="red"><p class="aside-list-text">Red</p></label>
+              </li>
+              <li>
+                <input type="checkbox" name="color" id="green" />
+                <label for="green"><p class="aside-list-text">Green</p></label>
+              </li>
+              <li>
+                <input type="checkbox" name="color" id="blue" />
+                <label for="blue"><p class="aside-list-text">Blue</p></label>
+              </li>
+              <li class="aside-padding">
+                <input type="checkbox" name="color" id="orange" />
+                <label for="orange"
+                  ><p class="aside-list-text">Orange</p></label
+                >
+              </li>
+            </ul>
+            <ul>
+              <h3 class="aside-title">Ram</h3>
+              <li>
+                <input type="checkbox" name="ram" id="1gb" />
+                <label for="1gb"><p class="aside-list-text">1GB</p></label>
+              </li>
+              <li>
+                <input type="checkbox" name="ram" id="2gb" />
+                <label for="2gb"><p class="aside-list-text">2GB</p></label>
+              </li>
+              <li>
+                <input type="checkbox" name="ram" id="4gb" />
+                <label for="4gb"><p class="aside-list-text">4GB</p></label>
+              </li>
+              <li>
+                <input type="checkbox" name="ram" id="6gb" />
+                <label for="6gb"><p class="aside-list-text">6GB</p></label>
+              </li>
+              <li>
+                <input type="checkbox" name="ram" id="8gb" />
+                <label for="8gb"><p class="aside-list-text">8GB</p></label>
+              </li>
+            </ul>
+          </div>
+          <p class="aside-text">Show more options...</p>
+          <div class="aside-button">
+            <button type="submit" class="aside-submit">SUBMIT</button>
+          </div>
+        </section>
+        <section class="article">
+          <nav class="article-nav">
+            <a href="">Home page</a>
+            <p>></p>
+            <a href="">Products</a>
+            <p>></p>
+            <a href="">Laptops and Tablets</a>
+          </nav>
+          <div class="article-header">
+            <h2 class="article-title">Laptops and Tablets</h2>
+
+            <div class="sorting">
+              <span>sort by price</span>
+              <img
+                src="images/arrow down.png"
+                alt=""
+                width="13px"
+                height="8px"
+              />
+              <ul class="sorting-submenu">
+                <li class="sorting-submenu-list">sort by name</li>
+                <li class="sorting-submenu-list">sort by date</li>
+                <li class="sorting-submenu-list">sort by popularity</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="article-location">
+            <section class="article-section">
+              <div class="article-section-background">
+                <div class="article-section-location">
+                  <img
+                    class="article-section-image"
+                    src="images/monitor.png"
+                    alt=""
+                    width="103px"
+                    height="90px"
+                  />
+                  <div class="zoom"></div>
+                  <div class="like"></div>
+                </div>
+              </div>
+              <div class="article-section-text">
+                <h3 class="article-section-title article-section-font">
+                  #1 Device Name
+                </h3>
+                <p class="decor">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">TYPE:</span>
+                  Laptop
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">SCREEN SIZE:</span> 7
+                  inches
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">RAM:</span> 1GB
+                </p>
+              </div>
+              <div class="article-section-price">
+                $599 <sup class="price">25</sup>
+              </div>
+              <button class="button-details" type="submit">MORE DETAILS</button>
+              <button class="button-details" type="submit">
+                MORE DETAILS <img src="images/section-basket.png" alt="" />
+              </button>
+            </section>
+            <section class="article-section">
+              <div class="article-section-background">
+                <div class="article-section-location">
+                  <img
+                    class="article-section-image"
+                    src="images/remote-controller.png"
+                    alt=""
+                    width="103px"
+                    height="84px"
+                  />
+                  <div class="zoom"></div>
+                  <div class="like"></div>
+                </div>
+              </div>
+              <div class="article-section-text">
+                <h3 class="article-section-title article-section-font">
+                  #2 Device Name
+                </h3>
+                <p class="decor">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">TYPE:</span>
+                  Laptop
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">SCREEN SIZE:</span> 7
+                  inches
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">RAM:</span> 1GB
+                </p>
+              </div>
+              <div class="article-section-price">
+                $1250 <sup class="price">99</sup>
+              </div>
+              <button class="button-details" type="submit">MORE DETAILS</button>
+              <button class="button-details" type="submit">
+                MORE DETAILS <img src="images/section-basket.png" alt="" />
+              </button>
+            </section>
+            <section class="article-section">
+              <div class="article-section-background">
+                <div class="article-section-location">
+                  <img
+                    class="article-section-image"
+                    src="images/watch.png"
+                    alt=""
+                    width="57px"
+                    height="102px"
+                  />
+                  <div class="zoom"></div>
+                  <div class="like"></div>
+                </div>
+              </div>
+              <div class="article-section-text">
+                <h3 class="article-section-title article-section-font">
+                  #3 Device Name
+                </h3>
+                <p class="decor">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">TYPE:</span>
+                  Laptop
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">SCREEN SIZE:</span> 7
+                  inches
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">RAM:</span> 1GB
+                </p>
+              </div>
+              <div class="article-section-price">
+                $399 <sup class="price">50</sup>
+              </div>
+              <button class="button-details" type="submit">MORE DETAILS</button>
+              <button class="button-details" type="submit">
+                MORE DETAILS <img src="images/section-basket.png" alt="" />
+              </button>
+            </section>
+            <section class="article-section">
+              <div class="article-section-background">
+                <div class="article-section-location">
+                  <img
+                    class="article-section-image"
+                    src="images/notebook.png"
+                    alt=""
+                    width="103px"
+                    height="62px"
+                  />
+                  <div class="zoom"></div>
+                  <div class="like"></div>
+                </div>
+              </div>
+              <div class="article-section-text">
+                <h3 class="article-section-title article-section-font">
+                  #1 Device Name
+                </h3>
+                <p class="decor">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">TYPE:</span>
+                  Laptop
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">SCREEN SIZE:</span> 7
+                  inches
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">RAM:</span> 1GB
+                </p>
+              </div>
+              <div class="article-section-price">
+                $599 <sup class="price">25</sup>
+              </div>
+              <button class="button-details" type="submit">MORE DETAILS</button>
+              <button class="button-details" type="submit">
+                MORE DETAILS <img src="images/section-basket.png" alt="" />
+              </button>
+            </section>
+            <section class="article-section">
+              <div class="article-section-background">
+                <div class="article-section-location">
+                  <img
+                    class="article-section-image"
+                    src="images/player.png"
+                    alt=""
+                    width="61px"
+                    height="102px"
+                  />
+                  <div class="zoom"></div>
+                  <div class="like"></div>
+                </div>
+              </div>
+              <div class="article-section-text">
+                <h3 class="article-section-title article-section-font">
+                  #2 Device Name
+                </h3>
+                <p class="decor">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">TYPE:</span>
+                  Laptop
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">SCREEN SIZE:</span> 7
+                  inches
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">RAM:</span> 1GB
+                </p>
+              </div>
+              <div class="article-section-price">
+                $1250 <sup class="price">99</sup>
+              </div>
+              <button class="button-details" type="submit">MORE DETAILS</button>
+              <button class="button-details" type="submit">
+                MORE DETAILS <img src="images/section-basket.png" alt="" />
+              </button>
+            </section>
+            <section class="article-section">
+              <div class="article-section-background">
+                <div class="article-section-location">
+                  <img
+                    class="article-section-image"
+                    src="images/telephone.png"
+                    alt=""
+                    width="54px"
+                    height="102px"
+                  />
+                  <div class="zoom"></div>
+                  <div class="like"></div>
+                </div>
+              </div>
+              <div class="article-section-text">
+                <h3 class="article-section-title article-section-font">
+                  #3 Device Name
+                </h3>
+                <p class="decor">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">TYPE:</span>
+                  Laptop
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">SCREEN SIZE:</span> 7
+                  inches
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">RAM:</span> 1GB
+                </p>
+              </div>
+              <div class="article-section-price">
+                $399 <sup class="price">50</sup>
+              </div>
+              <button class="button-details" type="submit">MORE DETAILS</button>
+              <button class="button-details" type="submit">
+                MORE DETAILS <img src="images/section-basket.png" alt="" />
+              </button>
+            </section>
+            <section class="article-section">
+              <div class="article-section-background">
+                <div class="article-section-location">
+                  <img
+                    class="article-section-image"
+                    src="images/tablet.png"
+                    alt=""
+                    width="69px"
+                    height="102px"
+                  />
+                  <div class="zoom"></div>
+                  <div class="like"></div>
+                </div>
+              </div>
+              <div class="article-section-text">
+                <h3 class="article-section-title article-section-font">
+                  #1 Device Name
+                </h3>
+                <p class="decor">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">TYPE:</span>
+                  Laptop
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">SCREEN SIZE:</span> 7
+                  inches
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">RAM:</span> 1GB
+                </p>
+              </div>
+              <div class="article-section-price">
+                $599 <sup class="price">25</sup>
+              </div>
+              <button class="button-details" type="submit">MORE DETAILS</button>
+              <button class="button-details" type="submit">
+                MORE DETAILS <img src="images/section-basket.png" alt="" />
+              </button>
+            </section>
+            <section class="article-section">
+              <div class="article-section-background">
+                <div class="article-section-location">
+                  <img
+                    class="article-section-image"
+                    src="images/remote-controller.png"
+                    alt=""
+                    width="103px"
+                    height="84px"
+                  />
+                  <div class="zoom"></div>
+                  <div class="like"></div>
+                </div>
+              </div>
+              <div class="article-section-text">
+                <h3 class="article-section-title article-section-font">
+                  #2 Device Name
+                </h3>
+                <p class="decor">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">TYPE:</span>
+                  Laptop
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">SCREEN SIZE:</span> 7
+                  inches
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">RAM:</span> 1GB
+                </p>
+              </div>
+              <div class="article-section-price">
+                $1250 <sup class="price">99</sup>
+              </div>
+              <button class="button-details" type="submit">MORE DETAILS</button>
+              <button class="button-details" type="submit">
+                MORE DETAILS <img src="images/section-basket.png" alt="" />
+              </button>
+            </section>
+            <section class="article-section">
+              <div class="article-section-background">
+                <div class="article-section-location">
+                  <img
+                    class="article-section-image"
+                    src="images/watch.png"
+                    alt=""
+                    width="57px"
+                    height="102px"
+                  />
+                  <div class="zoom"></div>
+                  <div class="like"></div>
+                </div>
+              </div>
+              <div class="article-section-text">
+                <h3 class="article-section-title article-section-font">
+                  #3 Device Name
+                </h3>
+                <p class="decor">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">TYPE:</span>
+                  Laptop
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">SCREEN SIZE:</span> 7
+                  inches
+                </p>
+                <p class="decor">
+                  <span class="article-section-font">RAM:</span> 1GB
+                </p>
+              </div>
+              <div class="article-section-price">
+                $399 <sup class="price">50</sup>
+              </div>
+              <button class="button-details" type="submit">MORE DETAILS</button>
+              <button class="button-details" type="submit">
+                MORE DETAILS <img src="images/section-basket.png" alt="" />
+              </button>
+            </section>
+          </div>
+          <div class="load-more">Load more...</div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer"><p>Copyright 2017</p></footer>
+  </body>
+</html>
